@@ -1,14 +1,6 @@
 #Prueba Técnica Logikoss
 
-- Clonar este proyecto
-```bash
-git clone url_repo
-```
-- Generar rama de acuerdo a tu Nombre ejemplo con Jose Pérez en snake_case
-
-```bash
-git checkout -b jose_perez
-```
+- Hacer un fork de este proyecto
 
 - Genera los archivo de **auth**
 - Genera una migracion donde añadas 2 nuevos campos `username string unique`  y `avatar string nullable`
@@ -109,9 +101,11 @@ class CreatePostsTable extends Migration
 - Generar un CRUD para posts donde apliques una `Policy` y un `Request`, en el controlador implementar la inyeccion de dependencia del modelo y utilizar el campo `slug` como parámetro de busqueda
     - Opcional Implementar carga de imagen en el campo `image` y wysiwyg-editor para el campo `content`
     
-- Implementar Pruenbas Unitarias para ambos casos y subir tus cambios.
+- Implementar Pruebas Unitarias para ambos casos y subir tus cambios.
 
 - Puntos extra utilizar componentes de Vue y framework Css diferente a Bootstrap
+
+- Subir todos los cambios en tu fork y compartir el repo.
 
 Se probará en un ambiente con `PHP7.2`, `MySql5.7` bd `laravel` , user `root` pass `secret`  y se ejecutarán los siguientes comandos
 
