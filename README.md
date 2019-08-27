@@ -1,6 +1,6 @@
 #Prueba Técnica Logikoss
 
-- Hacer un fork de este proyecto
+- Clonar este proyecto
 
 - Genera los archivo de **auth**
 - Genera una migracion donde añadas 2 nuevos campos `username string unique`  y `avatar string nullable`
@@ -133,3 +133,4 @@ npm install
 ```bash
 npm run dev
 ```
+- Al finalizar subir el proyecto a un repositorio publico en tu cuenta de github.
