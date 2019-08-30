@@ -11,6 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', ['uses' => 'UsuarioController@index']);
+
+Route::get('/usuarios', ['as' => 'usuario.inicio', 'uses' => 'UsuarioController@index']);
+Route::get('/nuevoUsuario', ['as' => 'usuario.nuevoUsuario', 'uses' => 'UsuarioController@create']);
+Route::get('/editarUsuario/{usuario}', ['as' => 'usuario.editarUsuario', 'uses' => 'UsuarioController@edit'])->where('usuario', '[0-9]+');
+Route::post('/actualizarUsuario', ['as' => 'usuario.actualizarUsuario', 'uses' => 'UsuarioController@update']);
+Route::get('/eliminarUsuario/{usuario}', ['as' => 'usuario.eliminarUsuario', 'uses' => 'UsuarioController@destroy'])->where('usuario', '[0-9]+');
+Route::post('/registrarUsuario', ['as' => 'usuario.registrarUsuario', 'uses' => 'UsuarioController@store']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

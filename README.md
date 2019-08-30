@@ -134,3 +134,4 @@ npm install
 npm run dev
 ```
 - Al finalizar subir el proyecto a un repositorio publico en tu cuenta de github.
+# test_logikoss_oscar
